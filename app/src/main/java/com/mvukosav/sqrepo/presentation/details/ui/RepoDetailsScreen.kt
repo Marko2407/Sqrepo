@@ -1,4 +1,4 @@
-package com.mvukosav.sqrepo.presentation.details.viewmodel.ui
+package com.mvukosav.sqrepo.presentation.details.ui
 
 import android.content.Intent
 import android.net.Uri
