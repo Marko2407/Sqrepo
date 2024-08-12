@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sqrepo</string>
+    <string name="repo_forks">Forks: %1$s</string>
+    <string name="repo_watchers">Watchers: %1$s</string>
+    <string name="repo_issues">Issues: %1$s</string>
+    <string name="repo_open_repository">Open Repository</string>
+    <string name="repo_repository_details_title">Repository Details</string>
+    <string name="repo_error_loading_more_data">Error loading more data: %1$s</string>
+    <string name="repo_repositories_title">Repositories</string>
+    <string name="repo_error">Error: %1$s</string>
+</resources>

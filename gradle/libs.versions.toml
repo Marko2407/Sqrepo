@@ -1,0 +1,126 @@
+[versions]
+# SDK Versions
+compileSdk = "34"
+minSdk = "33"
+targetSdk = "34"
+versionCode = "1"
+versionName = "1.0"
+composeCompiler = "1.5.1"
+
+# Plugin Versions
+agp = "8.5.2"
+kotlin = "1.9.0"
+
+ktlint = "11.5.1"
+detekt = "1.23.1"
+
+# Core Libraries Versions
+coreKtx = "1.13.1"
+lifecycleRuntimeKtx = "2.8.4"
+activityCompose = "1.9.1"
+
+# Compose Versions
+composeBom = "2024.06.00"
+material3 = "1.2.1"
+
+# Networking Versions
+retrofit = "2.11.0"
+converterGson = "2.9.0"
+loggingInterceptor = "4.12.0"
+
+# Dependency Injection Versions
+hiltAndroid = "2.48"
+hiltNavigationCompose = "1.2.0"
+
+# Image Loading Versions
+coilCompose = "2.4.0"
+
+# Paging Versions
+pagingRuntime = "3.3.2"
+
+# Testing Versions
+junit = "4.13.2"
+junitVersion = "1.2.1"
+coreTesting = "2.2.0"
+kotlinxCoroutinesTest = "1.8.1"
+mockk = "1.13.12"
+uiTooling = "1.6.8"
+
+[libraries]
+# Core Libraries
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+
+# Compose Libraries
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidx-lifecycle-runtime-compose-android = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+
+# Networking Libraries
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+
+# Dependency Injection Libraries
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+
+# Image Loading Libraries
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+
+# Paging Libraries
+androidx-paging-common = { module = "androidx.paging:paging-common", version.ref = "pagingRuntime" }
+androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingRuntime" }
+androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingRuntime" }
+
+# Testing Libraries
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
+jlleitschuh-gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+gitlab-arturbosch-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+
+[bundles]
+compose = [
+    "androidx-compose-bom",
+    "androidx-ui",
+    "androidx-ui-graphics",
+    "androidx-ui-tooling-preview",
+    "androidx-material3",
+    "androidx-lifecycle-runtime-compose-android",
+    "androidx-hilt-navigation-compose",
+    "androidx-activity-compose"
+]
+
+networking = [
+    "retrofit",
+    "converter-gson",
+    "logging-interceptor"
+]
+
+paging = [
+    "androidx-paging-common",
+    "androidx-paging-compose",
+    "androidx-paging-runtime"
+]
+
+testing = [
+    "junit",
+    "androidx-junit",
+    "androidx-core-testing",
+    "kotlinx-coroutines-test",
+    "mockk"
+]
