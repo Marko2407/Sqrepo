@@ -1,4 +1,4 @@
-package com.mvukosav.sqrepo.test
+package com.mvukosav.sqrepo
 
 import com.mvukosav.sqrepo.common.Constants.ERROR_MESSAGE_NETWORK_ERROR
 import com.mvukosav.sqrepo.common.Constants.ERROR_MESSAGE_NOT_FOUND

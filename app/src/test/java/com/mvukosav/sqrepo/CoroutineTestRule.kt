@@ -1,4 +1,4 @@
-package com.mvukosav.sqrepo.test
+package com.mvukosav.sqrepo
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
