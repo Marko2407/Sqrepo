@@ -1,4 +1,4 @@
-package com.mvukosav.sqrepo
+package com.mvukosav.sqrepo.test
 
 import androidx.paging.PagingData
 import androidx.paging.map

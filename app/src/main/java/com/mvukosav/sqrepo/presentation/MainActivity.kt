@@ -11,7 +11,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.mvukosav.sqrepo.common.Constants.PARAM_REPO_ID
 import com.mvukosav.sqrepo.presentation.details.viewmodel.ui.RepoDetailsScreen
-import com.mvukosav.sqrepo.presentation.home.viewmodel.ui.HomeScreen
+import com.mvukosav.sqrepo.presentation.home.ui.HomeScreen
 import com.mvukosav.sqrepo.presentation.ui.theme.SqrepoTheme
 import dagger.hilt.android.AndroidEntryPoint
 

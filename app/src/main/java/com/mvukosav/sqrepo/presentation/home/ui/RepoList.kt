@@ -1,4 +1,4 @@
-package com.mvukosav.sqrepo.presentation.home.viewmodel.ui
+package com.mvukosav.sqrepo.presentation.home.ui
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn

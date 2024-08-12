@@ -1,4 +1,4 @@
-package com.mvukosav.sqrepo.presentation.home.viewmodel.ui
+package com.mvukosav.sqrepo.presentation.home.ui
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement

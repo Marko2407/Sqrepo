@@ -1,6 +1,6 @@
-package com.mvukosav.sqrepo
+package com.mvukosav.sqrepo.test
 
-import GetRepositoryUseCaseTest.Companion.TEST_REPOSITORY_ID
+import com.mvukosav.sqrepo.test.GetRepositoryUseCaseTest.Companion.TEST_REPOSITORY_ID
 import androidx.lifecycle.SavedStateHandle
 import com.mvukosav.sqrepo.common.Constants
 import com.mvukosav.sqrepo.common.Constants.ERROR_MESSAGE_LIMIT_EXCEED
